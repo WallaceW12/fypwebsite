@@ -1,0 +1,11 @@
+final knowledgeRequest = {
+        'knowledgeRequest': {
+ 	  "invokedSkills": ["SimilarImages"],
+          'invokedSkillsRequestData': {'enableEntityData': 'true'}
+        }
+      };
+
+request = jsonToFormData(request, knowledgeRequest );
+request.headers.addAll(headers)
+        .files.add(await http.MultipartFile.fromPath('image', imgpath,
+            filename: 'myfile'));
