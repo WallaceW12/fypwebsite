@@ -9,3 +9,6 @@ request = jsonToFormData(request, knowledgeRequest );
 request.headers.addAll(headers)
         .files.add(await http.MultipartFile.fromPath('image', imgpath,
             filename: 'myfile'));
+
+
+https://rapidapi.com/letscrape-6bRBa3QguO5/api/real-time-lens-data/details
